@@ -247,7 +247,6 @@ function ChatList({ user_id, onSelectChat, selectedChatId }) {
   }
 
   // Hide chat list for guest user
-  const isGuest = user_id === undefined || user_id === null || user_id === 'guest';
   // If using Nhost, you may want to check user email instead
   // For this example, we check user email from useUserData
   const userData = window.nhost?.auth?.getUser() || {};
